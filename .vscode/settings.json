@@ -1,3 +1,12 @@
 {
-  "solidity.compileUsingRemoteVersion": "v0.8.15+commit.e14f2714"
+  "solidity.compileUsingRemoteVersion": "v0.8.15+commit.e14f2714",
+  "task.allowAutomaticTasks": true,
+  "debug.openDebug": "neverOpen",
+  "terminal.integrated.inheritEnv": false,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
 }
